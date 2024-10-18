@@ -69,7 +69,7 @@ class TestChapter03ex05:
         return None
 
     @pytest.mark.solution_runner(
-        ("4sgr____4234fasf", "34qfqw4fq4fq3hweq4_!4", get_password()), 0.1
+        ("4sgr____4234fasf", "34qfqw4fq4fq3hweq4_!4", get_password), 0.1
     )
     def test_solution_5_output(self, solution_runner):
         solution_out = solution_runner
@@ -171,8 +171,8 @@ class TestChapter03ex12:
 
     @pytest.mark.solution_runner(
         [
-            ("0", "0", get_value()),
-            ("100", get_value()),
+            ("0", "0", get_value),
+            ("100", get_value),
             ("0", "0", "0", "0", "0", "0"),
         ],
         0.1,
@@ -217,14 +217,14 @@ class TestChapter03ex13:
             (
                 "4sgr____4233g3hwh44w4fasf",
                 "34qfqw4fq4fq3h2362346weq4_!4",
-                get_password(),
+                get_password,
             ),
             (
                 "4sgr____4234fasadfw3gf",
                 "34qfqw4fq4fq3hw23geq4_!4",
                 "34f3434gaegaeg236236ae;h4g",
             ),
-            (get_password(),),
+            (get_password,),
         ],
         0.1,
     )
