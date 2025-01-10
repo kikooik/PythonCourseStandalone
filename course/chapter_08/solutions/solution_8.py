@@ -8,13 +8,13 @@ while t := input():
         p = int(input())
     books.append((t, p))
     
-(print(books))
 for i in range(len(books)):
     if d > books[i][1]:
         d = d
     elif d < books[i][1]:
         d = books[i][1]
-        
+        b = books[i]
+print(f"Самая толстая книга: {b}")        
 
 for i in range(len(books)):
     s += books[i][1]
