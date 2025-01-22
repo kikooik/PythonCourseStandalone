@@ -1,0 +1,6 @@
+s = input()
+l = s.split()
+u = set(l)
+l = list(u)
+s = sorted(l)
+print(*s)

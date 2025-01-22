@@ -1,0 +1,5 @@
+s = input()
+l = s.split()
+u = set(l)
+l = sorted(u, reverse=True)
+print(*l)

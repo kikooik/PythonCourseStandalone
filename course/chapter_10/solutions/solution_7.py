@@ -1,0 +1,5 @@
+s = input()
+l = s.split()
+u = set(l)
+l = list(u)
+print(f"Количество уникальных элементов: {len(l)}")
